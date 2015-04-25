@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
 	public void Morrer()
 	{
 		transform.position = posicaoInicio.transform.position;
+		GetComponent<Rigidbody2D>().velocity.Set(0,0);
 	}
 	// Use this for initialization
 	void Start () 
